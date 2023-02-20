@@ -1,0 +1,29 @@
+{
+    "root": true,
+    "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "ignorePatterns": ["**/*.js"],
+    "rules": {
+        "@typescript-eslint/no-floating-promises": "off"
+    }
+}
